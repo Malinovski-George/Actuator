@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class CustomEndPoint {
   @ReadOperation
-  public String mypoint() {
-    return "New custom end point";
+  public String myPoint() {
+    return "{\"Value\": \"New custom end point\"}";
   }
 }

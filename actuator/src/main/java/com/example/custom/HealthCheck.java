@@ -5,7 +5,7 @@ import org.springframework.boot.actuate.health.HealthIndicator;
 import org.springframework.stereotype.Component;
 
 @Component
-public class ExtendingEndPoint implements HealthIndicator {
+public class HealthCheck implements HealthIndicator {
 
   @Override
   public Health health() {
@@ -18,6 +18,6 @@ public class ExtendingEndPoint implements HealthIndicator {
 
   public int check() {
     // Our logic to check health
-    return 0;
+    return 1;
   }
 }
